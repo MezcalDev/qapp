@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qapp", "qapp\qapp.csproj", "{F23C3D2A-195E-47C8-862F-B5CE0C53A6F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qapp.iOS", "iOS\qapp.iOS.csproj", "{2408881D-8D6F-4C22-A62E-1EB592055C86}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Targets", "Targets", "{F7E7996E-C910-49CD-B74A-FD3314A43645}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qapp.Droid", "Droid\qapp.Droid.csproj", "{C665A730-72C0-402C-B5C7-DAC797FFE00F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qapp.iOS", "iOS\qapp.iOS.csproj", "{2408881D-8D6F-4C22-A62E-1EB592055C86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,5 +55,9 @@ Global
 		{F23C3D2A-195E-47C8-862F-B5CE0C53A6F6}.Release|iPhone.Build.0 = Release|Any CPU
 		{F23C3D2A-195E-47C8-862F-B5CE0C53A6F6}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F23C3D2A-195E-47C8-862F-B5CE0C53A6F6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C665A730-72C0-402C-B5C7-DAC797FFE00F} = {F7E7996E-C910-49CD-B74A-FD3314A43645}
+		{2408881D-8D6F-4C22-A62E-1EB592055C86} = {F7E7996E-C910-49CD-B74A-FD3314A43645}
 	EndGlobalSection
 EndGlobal
