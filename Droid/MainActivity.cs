@@ -17,6 +17,8 @@ namespace qapp.Droid
 		{
 			base.OnCreate (bundle);
 
+			App.ParseManager = new ParseManager(new ParseStorage ());
+
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
 			LoadApplication (new App ());
