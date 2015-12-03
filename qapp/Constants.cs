@@ -7,8 +7,8 @@ namespace qapp
 		public Constants ()
 		{
 		}
-		public const string AppId = "O2eGWgo09c7rqjUAovtPIlwzz45Xa4ZY6Zn1fHbk";
-		public const string NetID = "uDDENAdaNSjasXK8ZYM10o124UhRrZH1cXeMUcXX";
+		public const string AppId = "otjXYTPNKPjDd5jyysjFbETVPETLHkjZv0nhjtn7";
+		public const string NetID = "FYugvpl0Ih4zT2JvWASJC5JC5cln5qgOCeQiPJzd";
 	}
 }
 
