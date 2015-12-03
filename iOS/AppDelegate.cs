@@ -16,6 +16,8 @@ namespace qapp.iOS
 
 			LoadApplication (new App ());
 
+			App.ParseManager = new ParseManager(new ParseStorage ());
+
 			return base.FinishedLaunching (app, options);
 		}
 	}

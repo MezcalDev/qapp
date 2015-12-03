@@ -6,20 +6,12 @@ namespace qapp
 {
 	public class App : Application
 	{
+		public static ParseManager ParseManager { get; set; }
+
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			MainPage = new ParseTest ();
 		}
 
 		protected override void OnStart ()
