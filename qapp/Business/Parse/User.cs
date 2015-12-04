@@ -2,13 +2,13 @@
 
 namespace qapp
 {
-	public class User
+	public class User 
 	{
-		Parse
-		public User ()
+		IUser _user;
+		public User (IUser user)
 		{
+			_user = user;
 		}
-		public string
 	}
 }
 

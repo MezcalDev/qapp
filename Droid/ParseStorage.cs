@@ -32,6 +32,20 @@ namespace qapp.Droid
 			await user.SignUpAsync();
 		}
 
+		async public void SignIn(string email, string password)
+		{
+			try
+			{
+				await ParseUser.LogInAsync(email, password);
+				User currentUser = new User(ParseUser.CurrentUser);
+				// Login was successful.
+			}
+			catch (Exception e)
+			{
+				// The login failed. Check the error to see why.
+			}
+		}
+
 	}
 }
 
