@@ -6,7 +6,8 @@
                      Orientation="Vertical"
                      Spacing="15">
 			<Button x:Name="testButton" Text="Test Parse" Clicked="OnTest" />
-			<Button x:Name="testSignUp" Text="Sign Up" Clicked="OnSignUp" />
+			<Button x:Name="testSignUp" Text="Sign Up"    Clicked="OnSignUp" />
+			<Button                     Text="Login"      Clicked="OnLogin" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

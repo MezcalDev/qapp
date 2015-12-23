@@ -1,5 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="qapp.SignUp">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="qapp.SignUp"
+			 Title="Sign Up">
 	<ContentPage.Content>
+		<StackLayout VerticalOptions="StartAndExpand">
+		    <Label Text=""/><Label Text=""/><Label Text=""/>
+		    <Label Text=""/><Label Text=""/><Label Text=""/>
+
+
+		    <Label Text="Sign UP"
+		    Font="Large"
+		    HorizontalOptions="Center"
+		    XAlign="Center"
+		    Rotation="-15"
+		    IsVisible="true"
+		    VerticalOptions="CenterAndExpand"
+		    FontAttributes="Bold"
+		    TextColor="Red"/>
+
+		    <Label Text=""/><Label Text=""/><Label Text=""/>
+		    <Label Text=""/><Label Text=""/><Label Text=""/>
+
+			
+
+
+			<Button Text="Sign Up"  />
+
+
+			<Label x:Name="messageLabel" />
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

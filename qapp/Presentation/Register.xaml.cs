@@ -11,6 +11,17 @@ namespace qapp
 		{
 			InitializeComponent ();
 		}
+
+		public void OnRegister(object sender, EventArgs args)
+		{
+			//			try
+			//			{
+
+			ParseManager.SharedInstance.Register(usernameNew.Text, passwordNew.Text);
+
+			//			} catch(Exception e) {
+			//			}
+		}
 	}
 }
 

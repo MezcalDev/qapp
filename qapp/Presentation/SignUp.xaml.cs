@@ -11,6 +11,15 @@ namespace qapp
 		{
 			InitializeComponent ();
 		}
+
+		public void OnSignUp(object sender, EventArgs args)
+		{
+			//			try
+			//			{
+			//ParseManager.SharedInstance.Login (usernameEntry.Text, passwordEntry.Text);
+			//			} catch(Exception e) {
+			//			}
+		}
 	}
 }
 
