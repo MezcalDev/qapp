@@ -22,6 +22,7 @@ namespace qapp
 			try
 			{
 				await ParseManager.SharedInstance.Login (usernameEntry.Text, passwordEntry.Text);
+				Navigation.PushAsync(new Page());
 			} catch(System.Net.WebException e) {
 				if (e.Status == WebExceptionStatus.ProtocolError)
 				{
