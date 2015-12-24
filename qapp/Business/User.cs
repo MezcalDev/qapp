@@ -6,8 +6,8 @@ namespace qapp
 	public class User
 	{
 		class Constants {
-			public static string Description = "description";
-			public static string Name = "name";
+			public const string Description = "description";
+			public const string Name = "name";
 		}
 
 		ParseUser _user;
