@@ -1,5 +1,6 @@
 ﻿using System;
 using Parse;
+using System.Threading.Tasks;
 
 namespace qapp
 {
@@ -53,9 +54,17 @@ namespace qapp
 		}
 		*/
 
-		async public void Login(string user, string password)
+		async public Task<User> Login(string userName, string password)
 		{
-			await ParseUser.LogInAsync (user, password);
+			try {
+				ParseUser parseUser = await ParseUser.LogInAsync (userName, password);
+				User user = new User(parseUser);
+				return user;
+			} catch (Exception e) {
+
+				Console.WriteLine ("exception");
+				throw e;
+			}
 		}
 	
 		async public void Register(string user, string password)
