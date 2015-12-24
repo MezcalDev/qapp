@@ -62,6 +62,17 @@ namespace qapp
 		{
 			
 			//await ParseUser.SaveAllAsync(user, password);
+			var users = new ParseUser ()
+			{
+				Username = user,//"email@example.com",
+				Password = password,//"my pass",
+				Email    = user//"email@example.com"
+			};
+
+			// other fields can be set just like with ParseObject
+			//user ["phone"] = "415-392-0202";
+
+			await users.SignUpAsync ();
 
 
 		}
