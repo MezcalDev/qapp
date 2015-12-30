@@ -9,7 +9,6 @@
 		    <Label Text=""/><Label Text=""/><Label Text=""/>
 		    <Label Text=""/><Label Text=""/><Label Text=""/>
 
-
 		    <Label Text="Test Login"
 		    Font="Large"
 		    HorizontalOptions="Center"
@@ -29,11 +28,8 @@
 			<Label Text="Password" TextColor="Blue"/>
 			<Entry x:Name="passwordEntry" Placeholder="password" IsPassword="true" />
 
-
-
 			<Button x:Name="loginButton" Text="Log In" Clicked="OnSignIn" />
-			<Button Text="Sign Up" Clicked="Register" />
-
+			<Button Text="Sign Up" Clicked="OnRegister" />
 
 			<Label x:Name="messageLabel" />
 		</StackLayout>

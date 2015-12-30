@@ -67,40 +67,30 @@ namespace qapp
 			}
 		}
 	
-		async public void Register(string user, string password)
+		async public Task Register(string user, string password)
 		{
-			
+			try{
 			//await ParseUser.SaveAllAsync(user, password);
-			var users = new ParseUser ()
-			{
+			var users = new ParseUser () {
 				Username = user,//"email@example.com",
 				Password = password,//"my pass",
-				Email    = user//"email@example.com"
+				Email = user//"email@example.com"
 			};
 
 			// other fields can be set just like with ParseObject
 			//user ["phone"] = "415-392-0202";
 
 			await users.SignUpAsync ();
+			}catch (Exception e) {
+
+				Console.WriteLine ("exception2");
+				throw e;
+			}
 
 
 		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 
 

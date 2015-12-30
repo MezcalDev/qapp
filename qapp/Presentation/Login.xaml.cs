@@ -9,7 +9,7 @@ namespace qapp
 	public partial class Login : ContentPage
 	{
 		class Constants {
-			public const string Error = "Error";
+			
 			public const string UserNotFound = "The user doesn't exist";
 		}
 		public Login ()
@@ -30,7 +30,7 @@ namespace qapp
 					if (response != null)
 					{
 						if (response.StatusCode == HttpStatusCode.NotFound) {
-							DisplayAlert (Constants.Error, Constants.UserNotFound, qapp.Constants.UserStrings.OK);
+							DisplayAlert (qapp.Constants.UserStrings.Error, Constants.UserNotFound, qapp.Constants.UserStrings.OK);
 						}
 					}
 					else
@@ -45,10 +45,10 @@ namespace qapp
 			}
 		}
 
-		public void Register(object sender, EventArgs args)
+		public void OnRegister(object sender, EventArgs args)
 		{
 			//this.Navigation.PushModalAsync(new NavigationPage(new Login()));
-			this.Navigation.PushAsync (new NavigationPage (new Register ()));
+			this.Navigation.PushAsync (new Register ());
 		}
 	}
 }
