@@ -22,7 +22,8 @@ namespace qapp
 			try
 			{
 				await ParseManager.SharedInstance.Login (usernameEntry.Text, passwordEntry.Text);
-				Navigation.PushAsync(new Page());
+				this.Navigation.PushModalAsync(new NavigationPage(new Page()));
+				//Navigation.PushAsync(new Page());
 			} catch(System.Net.WebException e) {
 				if (e.Status == WebExceptionStatus.ProtocolError)
 				{
@@ -47,8 +48,9 @@ namespace qapp
 
 		public void OnRegister(object sender, EventArgs args)
 		{
+			Navigation.PushAsync (new Register());
 			//this.Navigation.PushModalAsync(new NavigationPage(new Login()));
-			this.Navigation.PushAsync (new Register ());
+			////this.Navigation.PushModalAsync (new Register ());
 		}
 	}
 }

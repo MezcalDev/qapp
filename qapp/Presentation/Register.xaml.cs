@@ -19,14 +19,11 @@ namespace qapp
 		{
 			try
 			{
-			 await ParseManager.SharedInstance.Register(usernameNew.Text, passwordNew.Text);
-			 //await Navigation.PushAsync (new Page ());//Add
+				await ParseManager.SharedInstance.Register(usernameNew.Text, passwordNew.Text);
+				//await this.Navigation.PopToRootAsync(true); //No show error but not work
+				await this.Navigation.PopAsync();
+				//await Navigation.PopModalAsync(true); //Show error and not work
 
-				await this.Navigation.PopToRootAsync(true);
-				//await Navigation.PushModalAsync (new Page ());
-				await DisplayAlert (qapp.Constants.UserStrings.Succes,"User Registered" ,qapp.Constants.UserStrings.OK);
-				//await Navigation.PopModalAsync();
-				//this.Navigation.pop();
 			} catch(System.Net.WebException e) {
 
 				var response = e.Response as HttpWebResponse;
