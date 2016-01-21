@@ -90,6 +90,18 @@ namespace qapp
 
 		}
 
+		async public Task CreateQuestion(string question)
+		{
+			
+			var questions = new ParseObject ("Question");
+				questions ["question"] = question;
+				questions ["user"]     = ParseUser.CurrentUser;
+			
+			await questions.SaveAsync ();
+
+		}
+
+
 	
 
 
